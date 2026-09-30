@@ -1,0 +1,44 @@
+package project1;
+
+public class Assignment2 {
+
+	
+	public static void main(String[] args)
+	{
+		/*
+		 * Program 1
+		 * char a = 'A'; 
+		 * int aa = (int) a; 
+		 * System.out.println(aa);
+		 * 
+		 * char b = 'a';
+		 *  int bb = (int) b;
+		 *   System.out.println(bb);
+		 * 
+		 * char c = '0';
+		 *  int cc = (int) c; 
+		 *  System.out.println(cc);
+		 * 
+		 * char d = '@'; 
+		 * int dd = (int) d; 
+		 * System.out.println(dd);
+		 */
+		
+		
+		/*
+		 * Program2 
+		 * System.out.println("*"); 
+		 * System.out.println("**");
+		 * System.out.println("***"); 
+		 * System.out.println("****");
+		 * System.out.println("*****");
+		 */
+		
+		
+		double num1 = 10.75;
+		int num2 = (int) num1;
+		System.out.println("double value ="+num1);
+		System.out.println("converted to int = "+num2);
+	}
+	
+}
