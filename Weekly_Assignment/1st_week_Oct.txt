@@ -1,0 +1,111 @@
+package project2;
+
+public class P7_Assignment_02_10_2026 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//Question 1 — Reverse a Number
+		/*
+		 * int num=12345; 
+		 * int reverse = 0; 
+		 * for(int i=1;i<=5;i++) 
+		 * 	{ 
+		 * 	reverse = num%10;
+		 * 	System.out.print(reverse); 
+		 * 	num=num/10; 
+		 * }
+		 */
+		 
+		
+		
+		//Question 2 — Count Digits
+		/*
+		 * int num=987654; 
+		 * int count=0; 
+		 * for(int i=1;i<=6;i++) 
+		 * { 
+		 * 		num=num/10; count++; 
+		 * }
+		 * System.out.println(count);
+		 */
+		
+		
+		//Question 3 — Armstrong Number
+		/*
+		 * int arm=0; 
+		 * int num=153; 
+		 * int Original_num= num; 
+		 * int sum=0; 
+		 * for(int i=1;i<=3;i++) 
+		 * { 
+		 * 		arm = (num%10); 
+		 * 		//System.out.println(arm*arm*arm);
+		 * 		sum=sum+(arm*arm*arm); 
+		 * 		num=num/10; 
+		 * } //System.out.println(sum+"  "+num); 
+		 *if(sum==Original_num) 
+		 *	System.out.println("153 is an armstrong"); 
+		 *else
+		 * System.out.println("..not..");
+		 */
+		
+		
+		
+		//Question 4 — Even and Odd Numbers
+		/*
+		 * int i=1; 
+		 * System.out.println("Even numbers:"); 
+		 * for(;i<=20;i++) 
+		 * { 
+		 * 		if(i%2==0)
+		 * 			System.out.print(i+" "); 
+		 * } System.out.println();
+		 * System.out.println("Odd numbers :"); 
+		 * 
+		 * for(int j=0;j<=20;j++) 
+		 * { 
+		 * 		if(j%2!=0)
+		 * 		System.out.print(j+" "); 
+		 * }
+		 */
+		
+		
+		
+		
+		//Question 5 — Sum of Even Numbers
+		/*
+		 * int sum=0; 
+		 * for(int i=1;i<=50;i++) 
+		 * 	{ 
+		 * 		if(i%2==0) 
+		 * 			sum=sum+i; 
+		 * }
+		 * System.out.println(sum);
+		 */
+		
+		
+		
+		//Question 6 — Palindrome Number
+		
+		
+		  int num=1221; 
+		  int palindrome=num;
+		  int last = 0; 
+		  int pal = 0;
+		  for(int i=1;i<=4;i++) 
+		  	{ 
+			  last = num%10;
+			  pal=last+(pal*10);
+			  num=num/10; 
+			  }
+		  //System.out.print(pal); 
+		  if(pal==palindrome)
+			  System.out.println(pal+" is a palindrome");
+		  else
+			  System.out.println("not palindrome");
+			  
+	}
+
+}
