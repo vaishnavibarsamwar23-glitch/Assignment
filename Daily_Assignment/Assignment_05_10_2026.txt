@@ -1,0 +1,61 @@
+package project2;
+
+public class P9_Assignment_05_10_2026 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Assignment 1 — Spy Number 
+		/*
+		 * int num=123; 
+		 * int Originalnum=num; 
+		 * int sum=0; 
+		 * int product=1;
+		 * 
+		 * for(;num>0;) 
+		 * 	{ 
+		 * 		int remainder=num%10; 
+		 * 		sum=sum+remainder; 
+		 * 		num=num/10; 
+		 * 	}
+		 * //System.out.println(sum); 
+		 * num=Originalnum; 
+		 * for(;num>0;) 
+		 * 	{ 
+		 * 		int remainder=num%10; 
+		 * 		product=product*remainder; 
+		 * 		num=num/10; 
+		 * 	}
+		 * //System.out.println(product); 
+		 * if(sum==product)
+		 * 		System.out.println(Originalnum+" is a spy number"); 
+		 * else
+		 * 		System.out.println(Originalnum+" is not a spy number");
+		 */
+		
+		
+		
+		//Assignment 2 — Magic Number 
+		int num=199;
+		int Onum=num;
+		
+		for(;Onum>9;)
+		{
+			int sum=0;
+				for(int temp=Onum;temp>0;)
+				{
+					sum= sum+(temp%10);
+					temp=temp/10;
+				}
+				
+			Onum=sum;
+		}
+		if(Onum==1)
+			System.out.println(num+" is magic num");
+		else
+			System.out.println(num+"  is not magic num");
+			
+    
+	}
+
+}
