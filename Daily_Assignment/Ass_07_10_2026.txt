@@ -1,0 +1,46 @@
+package project2;
+
+public class P9_Ass_07_10_2026 {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		//1. Print Numbers and Their Cubes
+		//Take a number N and print each number from 1 to N along with its cube.
+		//Sample Input: N = 5
+		int num=5;
+		int i=1;
+		while(i<=num)
+		{
+			System.out.println(i+" cube ="+i*i*i);
+			i++;
+		}
+		System.out.println();System.out.println();
+
+		//2. Print Numbers and Their Double
+		//Take a number N and print each number from 1 to N along with its double.
+		//Sample Input: N = 5
+		int number=5;
+		int j=1;
+		while(j<=number)
+		{
+			System.out.println(j+" double ="+j*2);
+			j++;
+		}
+		System.out.println();System.out.println();
+		
+		
+		//3. Print Numbers and Their Multiplication by 5
+		//Take a number N and print each number from 1 to N along with its value after multiplying it by 5.
+		//Sample Input: N = 5
+		int nn=5;
+		int k=1;
+		while(k<=nn)
+		{
+			System.out.println(k+"*"+nn+" = "+ (k*5));
+			k++;
+		}
+	}
+
+}
+
