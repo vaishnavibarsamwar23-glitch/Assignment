@@ -1,0 +1,55 @@
+package project2;
+
+public class Ass_09_10_2026 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*
+		 * Q1. Count Even and Odd Numbers Write a Java program to count how many even
+		 * and odd numbers are present in an integer array. Input: {11, 24, 35, 42, 56,
+		 * 67, 80, 93} Expected Output: Even numbers: 4 Odd numbers: 4
+		 */
+		int a[]= {11, 24, 35, 42, 56, 67, 80, 93};
+		int even=0;
+		int odd=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]%2==0)
+				even++;
+			else
+				odd++;
+		}
+		System.out.println("Even numbers="+even);
+		System.out.println("Odd numbers="+odd);
+		
+		/*
+		 * Q2. Find Duplicate Elements Write a Java program to identify and print all
+		 * duplicate elements in an array. Each duplicate element should be printed only
+		 * once. Input:{10, 20, 30, 20, 40, 10, 50, 30, 60} Expected Output:Duplicate
+		 * elements: 10 20 30
+		 */
+		
+		int aa[]= {10, 20, 30, 20, 40, 10, 50, 30, 60};
+		int duplicate[]=new int [aa.length];
+		
+		System.out.print("Duplicate elements: ");
+		for(int i=0;i<aa.length;i++)
+		{
+			for(int j=i+1;j<aa.length;j++)
+			{
+				if(aa[i]==aa[j])
+				{
+					duplicate[i]=aa[i];	
+					System.out.print(duplicate[i]+" ");
+				}
+				
+			}
+			
+			
+
+		}
+		
+	}
+
+}
