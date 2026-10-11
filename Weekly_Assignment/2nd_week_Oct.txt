@@ -1,0 +1,143 @@
+package project2;
+
+import java.util.Iterator;
+
+public class Ass_Week_09_10_2026 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		 * Q1. Find the Second Largest Element Write a Java program to find the **second
+		 * largest distinct element** in an integer array. Input:** `{12, 45, 7, 89, 34,
+		 * 89, 56}` Expected Output:** `Second largest element: 56`
+		 */
+		System.out.println("Program1");
+		int a1[]={12,89, 45, 7, 89, 34, 89, 56};
+		int large=0;
+		int seclarge=0;
+		
+		for(int i=0;i<a1.length;i++)
+		{
+			if(a1[i]>large)			
+				large=a1[i];
+			
+		}
+		for(int i=0;i<a1.length;i++)
+		{
+			if(a1[i]>seclarge && a1[i]!=large)
+				seclarge=a1[i];
+			
+		}
+		System.out.println("largest= "+large+"  second large="+seclarge);
+		
+		
+		
+		
+	
+
+	
+	//Q2. Move All Zeros to the End
+	//Write a Java program to move all zeros to the end of an array while maintaining the relative order of the non-zero elements.
+	//**Input:**
+	//{0, 5, 0, 3, 8, 0, 2, 9}`
+	//**Expected Output:**
+	//`Array after moving zeros: 5 3 8 2 9 0 0 0`
+	
+		System.out.println();
+		System.out.println("Program2");
+	int arr[]={0, 5, 0, 3, 8, 0, 2, 9};
+	int last=arr.length-1;
+	for(int i=0;i<arr.length;i++)
+	{
+		for(int j=i+1;j<arr.length;j++)
+		{
+			int temp=0;
+			if(arr[i]==0)
+			{
+				temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+			System.out.print(arr[i]+" ");
+	}
+	
+	
+	System.out.println();System.out.println();
+	System.out.println("Program3");
+	
+	
+	//Q3. Find the Missing Number
+	//Write a Java program to find the missing number in an array containing distinct numbers from 1 to 10, with one number missing.
+	//Input:
+	//{1, 2, 3, 5, 6, 7, 8, 9, 10}
+	//Expected Output:
+	//Missing number: 4
+	int arr3[]={1, 2, 3, 5, 6, 7, 8, 9, 10};
+	int count=1;
+	for(int i=0;i<arr3.length;i++)
+	{
+		if(count==arr3[i])
+		{
+			count++;
+		}
+		else
+		{
+			System.out.println("Missing num="+count);
+			break;
+		}
+	}
+	
+	//Q4. Find Common Elements in Two Arrays
+	//Write a Java program to find the common elements between two integer arrays. Print each common element only once.
+//	Input:
+	//Array 1: {10, 20, 30, 40, 50}
+	//Array 2: {30, 40, 60, 70, 50}
+//	Expected Output:
+	//Common elements: 30 40 50
+	System.out.println();
+	System.out.println("Program4");
+	int array1[]={10, 20, 30, 40, 50};
+	int array2[]={30, 40, 60, 70, 50};
+	System.out.print("common elements=");
+	for(int i=0;i<array1.length;i++)
+	{
+		for(int j=0;j<array2.length;j++)
+		{
+			if(array1[i]==array2[j])
+			{
+				System.out.print(array1[i]+" ");
+				
+			}
+		}
+	}
+	
+	//Q5. Separate Positive and Negative Numbers
+	//Write a Java program to print all positive numbers first, followed by all negative numbers and zeros, while maintaining the original order within each group.
+	//Input:
+	//{-4, 7, 0, -2, 9, 0, -8, 5}
+	//Expected Output:
+	//7 9 5 -4 -2 -8 0 0
+	System.out.println();System.out.println();
+	System.out.println("Program5");
+	
+	int sep[]={-4, 7, 0, -2, 9, 0, -8, 5};
+	for(int i=0;i<sep.length;i++)
+	{
+		if(sep[i]>0)
+			System.out.print(sep[i]+" ");
+	}
+	for(int i=0;i<sep.length;i++)
+	{
+		if(sep[i]<0)
+			System.out.print(sep[i]+" ");
+	}
+	for(int i=0;i<sep.length;i++)
+	{
+		if(sep[i]==0)
+			System.out.print(sep[i]+" ");
+	}
+	
+	}	
+}
